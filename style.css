@@ -1,0 +1,61 @@
+html {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+	background-image:url('takis.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+}
+body:before {
+	opacity:0.3;
+	position: fixed;
+	z-index: 10;
+	display: block;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-animation:page_bg_change 10s infinite alternate;
+	   -moz-animation:page_bg_change 10s infinite alternate;
+	    -ms-animation:page_bg_change 10s infinite alternate;
+	     -o-animation:page_bg_change 10s infinite alternate;
+	        animation:page_bg_change 10s infinite alternate;
+}
+.container {
+	padding: 20px;
+	position: relative;
+	z-index: 100;
+	text-shadow: 1px 1px 1px #000;
+}
+
+a { color: white; }
+.buttons-wrap { margin-top:10px; }
+.btn {
+	background-color: transparent;
+	color: white;
+	border: solid white 1px;
+	border-radius: 3px;
+	margin: 10px;
+}
+.btn:focus { outline: none; }
+.btn:hover {
+	background-color: white;
+	color: #f00;
+}
+
+@-webkit-keyframes page_bg_change{0%{background-color:#f00;}25%{background-color:#fff;}50%{background-color:#f00;}75%{background-color:#fff;}100%{background-color:#f00;}}
+   @-moz-keyframes page_bg_change{0%{background-color:#f00;}25%{background-color:#fff;}50%{background-color:#f00;}75%{background-color:#fff;}100%{background-color:#f00;}}
+    @-ms-keyframes page_bg_change{0%{background-color:#f00;}25%{background-color:#fff;}50%{background-color:#f00;}75%{background-color:#fff;}100%{background-color:#f00;}}
+     @-o-keyframes page_bg_change{0%{background-color:#f00;}25%{background-color:#fff;}50%{background-color:#f00;}75%{background-color:#fff;}100%{background-color:#f00;}}
+        @keyframes page_bg_change{0%{background-color:#f00;}25%{background-color:#fff;}50%{background-color:#f00;}75%{background-color:#fff;}100%{background-color:#f00;}}
